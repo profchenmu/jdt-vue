@@ -1,0 +1,41 @@
+/* === Content Block === */
+$contentBlockBorderColor: #e1e1e1;
+$contentBlockColor: #6d6d72;
+$contentBlockTitle: $contentBlockColor;
+.content-block {
+    margin: 35px 0;
+    padding: 0 r(15);
+    color: $contentBlockTitle;
+    box-sizing: border-box;
+}
+.content-block-title {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: $contentBlockColor;
+    margin: 35px 15px 10px;
+    + .list-block, + .content-block, +.card {
+        margin-top: 10px;
+    }
+}
+.content-block-inner {
+    background: #fff;
+    padding: 10px 15px;
+    margin-left: -15px;
+    width: 100%;
+    position: relative;
+    color: #000;
+}
+.content-block.inset {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 7px;
+    .content-block-inner {
+        border-radius: 7px;
+    }
+}

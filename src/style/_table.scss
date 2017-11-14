@@ -1,0 +1,25 @@
+.table {
+  width: 100%;
+  border-left: 1px solid #e1e1e1;
+
+  th {
+    font-weight: normal;
+    color: #fff;
+    background-color: #9f9f9f;
+
+  }
+
+  th + th {
+    border-left: 1px solid #e1e1e1;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+
+  td {
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+  }
+}
